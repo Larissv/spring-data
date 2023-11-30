@@ -1,8 +1,9 @@
-package orm;
+package br.com.larissa.spring.data.orm;
 
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "cargos")
 public class Cargo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
